@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="229.0" prefWidth="307.0" spacing="20.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.calculator2.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <children>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <TextField fx:id="num1" maxWidth="50.0" prefHeight="26.0" prefWidth="46.0">
+               <HBox.margin>
+                  <Insets right="100.0" />
+               </HBox.margin>
+            </TextField>
+            <TextField fx:id="num2" alignment="CENTER" maxWidth="50.0" prefHeight="26.0" prefWidth="84.0" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="buttonPlus" mnemonicParsing="false" onAction="#clickButtonPlus" text="+">
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin></Button>
+            <Button fx:id="buttonMinus" mnemonicParsing="false" onAction="#clickButtonMinus" text="-">
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin></Button>
+
+            <Button fx:id="buttonMult" mnemonicParsing="false" onAction="#clickButtonMult" text="*">
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin></Button>
+            <Button fx:id="buttonSlash" mnemonicParsing="false" onAction="#clickButtonSlash" text="/">
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin></Button>
+            <Button fx:id="buttonPerc" mnemonicParsing="false" onAction="#clickButtonPerc" text="\%" />
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Label fx:id="result" text="" />
+         </children>
+      </HBox>
+   </children>
+</VBox>
